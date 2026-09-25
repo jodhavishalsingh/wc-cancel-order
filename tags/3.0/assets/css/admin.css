@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@font-face{
+    font-family: "wcc-font";
+    src:url("../fonts/wcc.eot");
+    src:url("../fonts/wcc.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/wcc.woff") format("woff"),
+    url("../fonts/wcc.ttf") format("truetype"),
+    url("../fonts/wcc.svg#wcc-font") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+/** Wc Cancel List Page **/
+.wc-cancel-order-list table.wp-list-table tr td.order_status mark.order-status{
+    display: inline-flex;
+    line-height: 2.5em;
+    color: #777;
+    background: #e5e5e5;
+    border-radius: 4px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    margin: -.25em 0;
+    cursor: inherit!important;
+    white-space: nowrap;
+    max-width: 100%;
+}
+.wc-cancel-order-list table.wp-list-table tr td.order_status mark.order-status span{
+    margin: 0 1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wc-cancel-order-list table.wp-list-table tr td.order_actions a.wc-cancel-approve-req,
+.wc-cancel-order-list table.wp-list-table tr td.order_actions a.wc-cancel-decline-req,
+.wc-cancel-order-list table.wp-list-table tr td.order_actions a.wc-cancel-loading{
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height:16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    text-indent: -9999px;
+    position: relative;
+    padding: 0!important;
+    height:32px!important;
+    width:32px;
+    font-size:16px;
+    color: #797979;
+    border-color: #797979;
+    background: none;
+}
+.wc-cancel-order-list table.wp-list-table tr td.order_actions a.wc-cancel-approve-req:before,
+.wc-cancel-order-list table.wp-list-table tr td.order_actions a.wc-cancel-decline-req:before,
+.wc-cancel-admin-main span.wc-cancel-approved-icon:before,
+.wc-cancel-admin-main span.wc-cancel-declined-icon:before{
+    font-family: "wcc-font" !important;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    text-indent: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:32px;
+    height:32px;
+    text-align: center;
+    line-height:32px;
+}
+.wc-cancel-order-list table.wp-list-table tr td.order_actions a.wc-cancel-approve-req:before,
+.wc-cancel-admin-main span.wc-cancel-approved-icon:before{
+    content: "\62";
+}
+.wc-cancel-order-list table.wp-list-table tr td.order_actions a.wc-cancel-decline-req:before,
+.wc-cancel-admin-main span.wc-cancel-declined-icon:before{
+    content: "\63";
+}
+.wc-cancel-order-list table.wp-list-table tr td.order_actions a.wc-cancel-decline-req{
+    margin:0 10px;
+}

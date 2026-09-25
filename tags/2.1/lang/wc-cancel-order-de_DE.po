@@ -1,0 +1,354 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Cancel Order Pro\n"
+"POT-Creation-Date: 2016-02-12 19:31+0530\n"
+"PO-Revision-Date: 2016-02-12 19:41+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/class-wc-email-cancel-request-approved-order.php:28
+msgid "Cancellation request accepted"
+msgstr "Kündigungsansuchen akzeptiert"
+
+#: includes/class-wc-email-cancel-request-approved-order.php:29
+msgid ""
+"This is an order notification sent to the customer when order cancellation "
+"request accepted."
+msgstr ""
+"Dies ist eine Bestellung-Benachrichtigung an den Kunden gesendet wenn "
+"bestellen Stornierung akzeptiert."
+
+#: includes/class-wc-email-cancel-request-approved-order.php:30
+msgid "Order cancellation request accepted"
+msgstr "Bestellanfrage Stornierung akzeptiert"
+
+#: includes/class-wc-email-cancel-request-approved-order.php:31
+msgid "Order No: {order_number} cancellation request accepted "
+msgstr "Bestell-Nr.: {Order_number} eine Abbruchanforderung akzeptiert"
+
+#: includes/class-wc-email-cancel-request-order.php:27
+msgid "Cancellation request"
+msgstr "Kündigungsansuchen"
+
+#: includes/class-wc-email-cancel-request-order.php:28
+msgid ""
+"This is an order notification sent to the admin when customer send the order "
+"cancellation request."
+msgstr ""
+"Dies ist eine Bestellung-Benachrichtigung an den Admin gesendet, wenn Kunden "
+"senden der Bestellung Abbruchanforderung."
+
+#: includes/class-wc-email-cancel-request-order.php:29
+msgid "Order cancellation request received"
+msgstr "Bestellung-Abbruchanforderung empfangen"
+
+#: includes/class-wc-email-cancel-request-order.php:30
+msgid "Order No: {order_number} cancellation request received"
+msgstr "Bestell-Nr.: {Order_number} eine Abbruchanforderung empfangen"
+
+#: includes/class-wc-email-cancel-request-order.php:108
+msgid "Enable/Disable"
+msgstr "Aktivieren/Deaktivieren"
+
+#: includes/class-wc-email-cancel-request-order.php:110
+msgid "Enable this email notification"
+msgstr "Aktivieren Sie diese E-Mail-Benachrichtigung"
+
+#: includes/class-wc-email-cancel-request-order.php:114
+msgid "Recipient(s)"
+msgstr "Empfänger"
+
+#: includes/class-wc-email-cancel-request-order.php:116
+#, php-format
+msgid ""
+"Enter recipients (comma separated) for this email. Defaults to <code>%s</"
+"code>."
+msgstr ""
+"Empfänger (kommagetrennt) für diese E-Mail eingeben. Standard: <code>%s</"
+"code>."
+
+#: includes/class-wc-email-cancel-request-order.php:122
+msgid "Subject"
+msgstr "Thema"
+
+#: includes/class-wc-email-cancel-request-order.php:124
+#, php-format
+msgid ""
+"This controls the email subject line. Leave blank to use the default "
+"subject: <code>%s</code>."
+msgstr ""
+"Dies legt die E-Mail-Betreffzeile fest. Lassen Sie dies frei, um den "
+"Standardbetreff zu verwenden: <code>%s</code>."
+
+#: includes/class-wc-email-cancel-request-order.php:130
+msgid "Email Heading"
+msgstr "Email Heading"
+
+#: includes/class-wc-email-cancel-request-order.php:132
+#, php-format
+msgid ""
+"This controls the main heading contained within the email notification. "
+"Leave blank to use the default heading: <code>%s</code>."
+msgstr ""
+"Dies legt die Hauptüberschrift in der E-Mail-Benachrichtigung. Lassen Sie "
+"dies frei, um die Standardüberschrift zu verwenden: <code>%s</code>."
+
+#: includes/class-wc-email-cancel-request-order.php:138
+msgid "Email type"
+msgstr "E-Mail Typ"
+
+#: includes/class-wc-email-cancel-request-order.php:140
+msgid "Choose which format of email to send."
+msgstr "Wählen Sie, welches E-Mail Format versendet werden soll."
+
+#: includes/class-wc-email-cancel-request-reject-order.php:28
+#: includes/class-wc-email-cancel-request-reject-order.php:30
+msgid "Order cancellation request denied"
+msgstr "Bestellung-Abbruchanforderung verweigert"
+
+#: includes/class-wc-email-cancel-request-reject-order.php:29
+msgid ""
+"This is an order notification sent to the customer when the order "
+"cancellation request denied."
+msgstr ""
+"Dies ist eine Bestellung-Benachrichtigung an den Kunden gesendet werden, "
+"wenn der Auftrag Abbruchanforderung verweigert."
+
+#: includes/class-wc-email-cancel-request-reject-order.php:31
+msgid "Order NO: {order_number} cancellation request denied"
+msgstr "Bestell-Nr.: {Order_number} eine Abbruchanforderung verweigert"
+
+#: includes/wc-cancel-dashboard.php:58
+msgid "Unpublished"
+msgstr "Nicht veröffentlicht"
+
+#: includes/wc-cancel-dashboard.php:60
+msgid "Y/m/d g:i:s A"
+msgstr "d.m.Y g:i:s A"
+
+#: includes/wc-cancel-dashboard.php:63
+msgid "Y/m/d"
+msgstr "d.m.Y"
+
+#: includes/wc-cancel-dashboard.php:70
+msgid "Yes"
+msgstr "Ja"
+
+#: includes/wc-cancel-dashboard.php:73
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] "%d Artikel"
+msgstr[1] "%d Artikel"
+
+#: includes/wc-cancel-dashboard.php:101 includes/wc-cancel-dashboard.php:119
+msgid "Via"
+msgstr "Via"
+
+#: includes/wc-cancel-dashboard.php:127
+msgid "Billing:"
+msgstr "Namen und Adresse des Kunden:"
+
+#: includes/wc-cancel-dashboard.php:132
+msgid "Tel:"
+msgstr "Telefon:"
+
+#: includes/wc-cancel-dashboard.php:157
+msgid "Guest"
+msgstr "Anmelden"
+
+#: includes/wc-cancel-dashboard.php:162
+#, php-format
+msgid "%s by %s"
+msgstr "﻿%s von %s"
+
+#: includes/wc-cancel-dashboard.php:177 includes/wc-cancel-dashboard.php:236
+msgid "Accept Cancellation"
+msgstr "Akzeptieren Stornierung"
+
+#: includes/wc-cancel-dashboard.php:178 includes/wc-cancel-dashboard.php:236
+msgid "Deny Cancellation"
+msgstr "Deny Stornierung"
+
+#: includes/wc-cancel-dashboard.php:181
+msgid "View"
+msgstr "Anzeigen"
+
+#: includes/wc-cancel-dashboard.php:184
+msgid "Cancellation Accepted"
+msgstr "Die Stornierung akzeptiert"
+
+#: includes/wc-cancel-dashboard.php:215
+msgid "Status"
+msgstr "Status"
+
+#: includes/wc-cancel-dashboard.php:216
+msgid "Order"
+msgstr "Bestellung"
+
+#: includes/wc-cancel-dashboard.php:217
+msgid "Purchased"
+msgstr "Erworben"
+
+#: includes/wc-cancel-dashboard.php:218
+msgid "Ship to"
+msgstr "Lieferadresse"
+
+#: includes/wc-cancel-dashboard.php:219
+msgid "Reason"
+msgstr "Grund"
+
+#: includes/wc-cancel-dashboard.php:220
+msgid "Customer Message"
+msgstr "Kundenmitteilung"
+
+#: includes/wc-cancel-dashboard.php:221
+msgid "Date"
+msgstr "Datum"
+
+#: includes/wc-cancel-dashboard.php:222
+msgid "Total"
+msgstr "Gesamtpreis"
+
+#: includes/wc-cancel-dashboard.php:223
+msgid "Actions"
+msgstr "Aktionen"
+
+#: includes/wc-cancel-dashboard.php:236
+msgid "Delete"
+msgstr "Löschen"
+
+#: includes/wc-cancel-settings.php:22 wc-cancel-order.php:122
+msgid "WC Cancel"
+msgstr "WC Cancel"
+
+#: includes/wc-cancel-settings.php:62
+msgid "Wc Cancel Order Options"
+msgstr "Wc Cancel-Bestellmöglichkeiten"
+
+#: includes/wc-cancel-settings.php:68
+msgid "Button Text"
+msgstr "Button Text"
+
+#: includes/wc-cancel-settings.php:72
+msgid "Cancel"
+msgstr "Abbr."
+
+#: includes/wc-cancel-settings.php:75
+msgid "Ask For Confirmation"
+msgstr "Um Bestätigung bitten"
+
+#: includes/wc-cancel-settings.php:76
+msgid "Confirm Before Cancellation Request"
+msgstr "Vor Abbruchanforderung bestätigen"
+
+#: includes/wc-cancel-settings.php:82
+msgid "Confirmation Text"
+msgstr "Bestätigungstext"
+
+#: includes/wc-cancel-settings.php:86 wc-cancel-order.php:90
+msgid "Are you sure, you want to proceed ?"
+msgstr "Bist du sicher, dass du fortfahren möchtest?"
+
+#: includes/wc-cancel-settings.php:90
+msgid "Success Message"
+msgstr "Erfolgsmeldung"
+
+#: includes/wc-cancel-settings.php:94 wc-cancel-order.php:91
+msgid "We are processing your request."
+msgstr "Wir werden Ihre Anfrage bearbeitet."
+
+#: includes/wc-cancel-settings.php:98
+msgid "Ask For Cancellation Reason"
+msgstr "Fragen Sie nach Stornierung Grund"
+
+#: includes/wc-cancel-settings.php:99
+msgid "Order Cancellation Reason"
+msgstr "Auftragsgrund Stornierung"
+
+#: includes/wc-cancel-settings.php:105
+msgid "Hide Cancellation Button"
+msgstr "Abbruch-Button ausblenden"
+
+#: includes/wc-cancel-settings.php:106
+msgid "Hide Order Cancellation Button When Order Status is "
+msgstr "Ausblenden Reihenfolge Abbruch Button beim Bestellstatus ist"
+
+#: templates/emails/cancel-request-approve-order.php:1
+#: templates/emails/plain/cancel-request-approve-order.php:1
+#, php-format
+msgid ""
+"Your order cancellation request is accepted and order from %s has been "
+"cancelled. The order was as follows:"
+msgstr ""
+"Ihre Stornierung der Bestellung wird akzeptiert und Bestellung von %s wurde "
+"abgesagt. Die Reihenfolge war wie folgt:"
+
+#: templates/emails/cancel-request-order.php:1
+#: templates/emails/plain/cancel-request-order.php:1
+msgid ""
+"Order cancellation request is received and order has been put on hold. Your "
+"order details are shown below for your reference:"
+msgstr ""
+"Stornierung der Bestellung eingeht und Bestellung ist auf Eis gelegt worden. "
+"Ihre Bestelldaten sind zu Ihrer Information nachfolgend aufgeführt:"
+
+#: templates/emails/cancel-request-rejecte-order.php:1
+#: templates/emails/plain/cancel-request-rejecte-order.php:1
+msgid ""
+"Your order cancellation request denied and is now being processed. Your "
+"order details are shown below for your reference:"
+msgstr ""
+"Ihre Bestellung-Stornierung verweigert und nun verarbeitet wird. Ihre "
+"Bestelldaten sind zu Ihrer Information nachfolgend aufgeführt:"
+
+#: wc-cancel-order.php:99
+msgid "Reason for cancellation"
+msgstr "Grund der Absage"
+
+#: wc-cancel-order.php:102
+msgid "Confirm Cancellation"
+msgstr "Stornierung bestätigen"
+
+#: wc-cancel-order.php:182
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: wc-cancel-order.php:235
+#, php-format
+msgid "Cancel Request <span class=\"count\">(%s)</span>"
+msgid_plural "Cancel Request <span class=\"count\">(%s)</span>"
+msgstr[0] "Anfrage <span class=\"count\">(%s)</span> Abbrechen"
+msgstr[1] "Anfrage <span class=\"count\">(%s)</span> Abbrechen"
+
+#: wc-cancel-order.php:266 wc-cancel-order.php:290 wc-cancel-order.php:314
+#: wc-cancel-order.php:382
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Sie haben nicht genügend Rechte um diese Seite anzuzeigen."
+
+#: wc-cancel-order.php:271 wc-cancel-order.php:295 wc-cancel-order.php:319
+msgid "You have taken too long. Please go back and retry."
+msgstr ""
+"Es hat zu lange gedauert. Bitte gehen Sie zurück und versuchen Sie es erneut."
+
+#: wc-cancel-order.php:371
+#, php-format
+msgid "Item #%s stock incremented from %s to %s."
+msgstr "Artikel #%s Bestand von %s auf %s erhöht."
+
+#: wc-cancel-order.php:395
+msgid "Cancellation Request"
+msgstr "Kündigungsansuchen"

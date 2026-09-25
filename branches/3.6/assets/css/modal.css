@@ -1,0 +1,351 @@
+/* WCCModal - custom modal styles (native <dialog>)
+   Flat design. Scoped + self-contained so it renders consistently on ANY theme:
+   box-sizing, fonts, colors, buttons and inputs are all normalised inside the modal. */
+.wcc-dialog,
+.wcc-modal,
+.wcc-modal-head,
+.wcc-modal-body,
+.wcc-modal-notice,
+.wcc-modal-foot,
+.wcc-modal button,
+.wcc-modal input,
+.wcc-modal textarea,
+.wcc-modal select{
+	box-sizing: border-box;
+}
+.wcc-dialog{
+	border: 0;
+	padding: 0;
+	margin: auto;
+	background: transparent;
+	max-width: 640px;
+	width: calc(100% - 40px);
+	box-shadow: 0 10px 40px rgba(0,0,0,.3);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+}
+.wcc-dialog::backdrop{
+	background: rgba(0,0,0,.6);
+}
+.wcc-modal{
+	background: #ffffff;
+	border-radius: 6px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	max-height: 80vh;
+	position: relative;
+	color: #333;
+	text-align: left;
+}
+.wcc-modal-head{
+	padding: 18px 22px;
+	background: #f7f7f7;
+	border-bottom: 1px solid #e2e2e2;
+}
+.wcc-modal-sub{
+	font-weight: 600;
+	font-size: 14px;
+	margin-bottom: 4px;
+	color: #666;
+	line-height: 1.4;
+}
+.wcc-modal-title{
+	font-size: 24px;
+	font-weight: 400;
+	color: #23282d;
+	line-height: 1.3;
+}
+.wcc-modal-body{
+	padding: 20px 22px;
+	overflow-y: auto;
+	color: #333;
+	font-size: 14px;
+}
+.wcc-modal-notice{
+	padding: 0 22px;
+}
+.wcc-modal-foot{
+	padding: 14px 22px;
+	text-align: right;
+	border-top: 1px solid #e2e2e2;
+	background: #f7f7f7;
+}
+
+/* Buttons - high specificity + !important so theme button resets cannot break them */
+.wcc-modal button.wcc-btn{
+	display: inline-block;
+	padding: 8px 18px;
+	margin-left: 8px;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	color: #333333;
+	border-radius: 3px;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.4;
+	text-decoration: none;
+	text-shadow: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+	overflow: visible;
+	outline: none;
+}
+.wcc-modal button.wcc-btn:hover{
+	background: #f0f0f0;
+	border-color: #cccccc;
+	color: #333333;
+}
+.wcc-modal button.wcc-btn-confirm{
+	background: #2c2c2c;
+	border-color: #2c2c2c;
+	color: #ffffff;
+}
+.wcc-modal button.wcc-btn-confirm:hover{
+	background: #444444;
+	border-color: #444444;
+	color: #ffffff;
+}
+.wcc-modal button.wcc-btn:focus-visible{
+	outline: 2px solid #2c2c2c;
+	outline-offset: 1px;
+}
+.wcc-modal button.wcc-btn[disabled]{
+	opacity: .5;
+	cursor: default;
+}
+
+/* Form fields inside the modal - normalised against theme styles */
+.wcc-modal input[type="text"],
+.wcc-modal input[type="number"],
+.wcc-modal input[type="email"],
+.wcc-modal input[type="radio"],
+.wcc-modal select,
+.wcc-modal textarea{
+	font-family: inherit;
+	font-size: 14px;
+	color: #333;
+	line-height: 1.4;
+	box-shadow: none;
+	text-shadow: none;
+}
+.wcc-modal-loading .wcc-modal-body{
+	opacity: .6;
+}
+.wcc-modal-loading:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 26px;
+	height: 26px;
+	margin: -13px 0 0 -13px;
+	border: 3px solid #ddd;
+	border-top-color: #2c2c2c;
+	border-radius: 50%;
+	animation: wcc-spin .8s linear infinite;
+}
+@keyframes wcc-spin{
+	to{ transform: rotate(360deg); }
+}
+.wcc-modal .wcc-partial-loading,
+.wcc-modal .wcc-spinner{
+	text-align: center;
+	padding: 20px;
+}
+
+/* Success / error notices rendered directly in the popup body */
+.wcc-modal .wcc_sucess,
+.wcc-modal .wcc_error{
+	display: block;
+	margin: 6px 0;
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.wcc-modal .wcc_sucess{
+	color: #1b5e20;
+	background: #e8f5e9;
+	border: 1px solid #c8e6c9;
+}
+.wcc-modal .wcc_error{
+	color: #b71c1c;
+	background: #fdecea;
+	border: 1px solid #f5c6cb;
+}
+
+/* ------------------------------------------------------------------
+ * Cancellation Request popup content (front-end + admin)
+ * Scoped under .wcc-modal so it renders consistently in every theme.
+ * ------------------------------------------------------------------ */
+
+/* Layout inherited from the legacy .wc-cancel-main content block */
+.wcc-modal .wc-cancel-main{
+	max-width: 600px;
+}
+.wcc-modal .wc-cancel-note{
+	padding: 6px 0;
+	font-size: 18px;
+	font-weight: 300;
+}
+.wcc-modal .wc-cancel-note > span{
+	font-size: 20px;
+	vertical-align: text-top;
+	padding-right: 5px;
+}
+.wcc-modal .wc-cancel-reason-in{
+	margin: 10px 0;
+}
+.wcc-modal .wc-cancel-reasons-head{
+	font-size: 18px;
+	font-weight: 600;
+	color: #23282d;
+}
+.wcc-modal ul.wc-cancel-reasons{
+	list-style: none;
+	padding: 5px 15px;
+	margin: 0;
+}
+.wcc-modal ul.wc-cancel-reasons li{
+	margin: 6px 0;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.wcc-modal ul.wc-cancel-reasons li input[type="radio"]{
+	margin: 0;
+	outline: none;
+	vertical-align: middle;
+	accent-color: #2c2c2c;
+}
+.wcc-modal ul.wc-cancel-reasons li label{
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	cursor: pointer;
+}
+.wcc-modal .wc-cancel-reason-txt{
+	margin: 15px 0;
+}
+.wcc-modal .wc-cancel-reason-txt textarea{
+	resize: none;
+	width: 100%;
+	min-height: 120px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 8px 10px;
+	font-family: inherit;
+	font-size: 14px;
+	background: #fff;
+	color: #333;
+}
+.wcc-modal .wc-cancel-reason-txt textarea:focus{
+	border-color: #2c2c2c;
+	outline: none;
+	box-shadow: 0 0 0 1px #2c2c2c;
+}
+.wcc-modal .wc-cancel-buttons{
+	text-align: right;
+}
+.wcc-modal .wc-cancel-buttons .wc-cancel-confirm{
+	margin-left: 10px;
+}
+.wcc-modal .wcc_load{
+	margin: 0;
+	text-align: center;
+}
+
+/* Approved / Declined status banners (admin request detail popup) */
+.wcc-modal .wc-cancel-meta.wc-cancel-approved,
+.wcc-modal .wc-cancel-meta.wc-cancel-declined{
+	margin: 12px 0;
+	padding: 12px 14px;
+	border-radius: 4px;
+	border-left: 4px solid;
+	display: block;
+}
+.wcc-modal .wc-cancel-meta.wc-cancel-approved{
+	color: #1b5e20;
+	background: #e8f5e9;
+	border-left-color: #2e7d32;
+}
+.wcc-modal .wc-cancel-meta.wc-cancel-declined{
+	color: #b71c1c;
+	background: #fdecea;
+	border-left-color: #c62828;
+}
+.wcc-modal .wc-cancel-approved span,
+.wcc-modal .wc-cancel-declined span{
+	display: block;
+}
+.wcc-modal .wc-cancel-meta.wc-cancel-approved label,
+.wcc-modal .wc-cancel-meta.wc-cancel-declined label{
+	vertical-align: top;
+	padding-right: 10px;
+	font-weight: bold;
+	cursor: default;
+}
+.wcc-modal span.wc-cancel-approved-icon,
+.wcc-modal span.wc-cancel-declined-icon{
+	font-weight: bold;
+	font-size: 16px;
+}
+.wcc-modal span.wc-cancel-approved-icon:before,
+.wcc-modal span.wc-cancel-declined-icon:before{
+	font-family: "wcc-font" !important;
+	speak: none;
+	font-weight: 400;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	vertical-align: middle;
+	margin: 0 5px 0 0;
+}
+.wcc-modal span.wc-cancel-approved-icon:before{
+	content: "\62";
+	color: #2e7d32;
+}
+.wcc-modal span.wc-cancel-declined-icon:before{
+	content: "\63";
+	color: #c62828;
+}
+
+/* Request detail meta rows (admin popup) */
+.wcc-modal .wc-cancel-meta{
+	vertical-align: top;
+	margin: 0 0 10px;
+	font-size: 14px;
+	line-height: 1.6;
+	color: #333;
+}
+.wcc-modal .wc-cancel-meta label{
+	vertical-align: top;
+	font-weight: bold;
+}
+.wcc-modal .wc-cancel-meta strong{
+	color: #2c2c2c;
+}
+
+/* Status pill badges (admin request list) */
+.wc-cancel-partial-status{
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 12px;
+}
+.wc-cancel-partial-status.pending{
+	background: #dba617;
+}
+.wc-cancel-partial-status.approved{
+	background: #2e7d32;
+}
+.wc-cancel-partial-status.declined{
+	background: #c62828;
+}
